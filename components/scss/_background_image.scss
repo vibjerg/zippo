@@ -1,0 +1,139 @@
+
+
+.background-image {
+  //background-color: black;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  overflow: hidden;
+  img {
+    width: 100%;
+    @media #{$medium-up} {
+      position: relative;
+    }
+  }
+}
+
+.swiper-container {
+  z-index: 0;
+}
+
+.swiper-container {
+  width: 100%;
+  height: 100%;
+  color: #fff;
+  text-align: center;
+}
+
+
+.swiper-slide .title {
+
+}
+$switch-size : 13px;
+.swiper-pagination-switch {
+  display: inline-block;
+  width: $switch-size;
+  height: $switch-size;
+  border-radius: $switch-size;
+  background: #CCC;
+  margin-right: 5px;
+  opacity: 0.8;
+  cursor: pointer;
+}
+
+.swiper-visible-switch {
+  background: #aaa;
+}
+
+.swiper-active-switch {
+  background: $title-color;
+}
+
+.landing-page .pagination {
+  position: absolute;
+  z-index: 20;
+  top: 10px;
+  margin-left: -36px;
+  left: 50%;
+}
+
+/**
+* Tabs for frontpage background image
+*/
+.swiper-tabs {
+ padding-right: 0;
+ ul {
+   margin: 0;
+   list-style: none
+ }
+  li {
+    width: 293px;
+    display: inline-block;
+    border-left: 1px solid white;
+    border-right: 1px solid white;
+    margin: 0;
+  }
+ a {
+  &:before {
+    @include single-transition();
+    @include css-triangle(10px, transparent, bottom);
+    position: relative;
+    top: -15px;
+    margin-top: -20px;
+    left: 50%;
+    margin-left: -10px;
+  }
+  @include single-transition();
+  padding: 1em 0.5em;
+  margin: 0 -2px;
+  background-color: $secondary-color;
+   font-size: 13px;
+  &:hover {
+    background-color: darken($secondary-color, 20%);
+  }
+  display: inline-block;
+  color: white;
+  font-family: $normal;
+  text-align: center;
+   width: 100%;
+   border-top: #fff solid 2px;
+  &.active {
+    background-color: $primary-color;
+    //border-top: $primary-color solid 3px;
+  }
+  &.active:before {
+    @include css-triangle(10px, $primary-color, bottom);
+  }
+}
+}
+
+.content-slide {
+  line-height: 1.4;
+  font-family: $normal;
+  /* color: black; */
+  /* margin-top: 200px; */
+  z-index: 1;
+  position: relative;
+  height: 0;
+  top: 250px;
+  max-width: 60%;
+  text-align: left;
+  .excerpt {
+    //max-width: 400px;
+  }
+  h2 {
+    @extend h1;
+    display: inline-block;
+  }
+  p {
+    font-size: 14px;
+  }
+  h2, a, p {
+    color: white;
+  }
+  h2, p {
+    padding: 5px;
+    background-color: rgba(0, 0, 0, 0.3);
+  }
+
+}

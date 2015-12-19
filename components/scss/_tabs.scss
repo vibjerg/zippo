@@ -1,0 +1,32 @@
+.tabs dd > a, .tabs .tab-title > a {
+  background-color: #fff;
+  padding: 0 0.5rem 0.5rem;
+  font-family: $headline, "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+  border-bottom: 2px solid #eee;
+  text-align: center;
+  font-size: 13px;
+  &:hover {
+    background-color: transparent;
+    color: $primary-color;
+  }
+}
+
+.tabs dd.active a, .tabs .tab-title.active a {
+  color: $primary-color;
+  border-bottom: 2px solid;
+  &:after{
+    @include css-triangle(6px, $primary-color, top);
+    position: absolute;
+    bottom: -12px;
+    left: 50%;
+    margin-left: -6px;
+  }
+}
+.tab{
+  width: 33%;
+}
+
+.sparta-faner.tabs .tab-title > a {
+  font-size: 16px;
+  padding: 0.5rem 1.5rem 0.5rem;
+}

@@ -1,0 +1,69 @@
+@import 'compass';
+@import "../config/breakpoints";
+@import "../config/colors";
+@import "../config/mixins";
+@import "../config/fonts";
+@import "../menu/menu";
+
+.header__wrapper {
+  @include clearfix;
+  background-color: $primary-color;
+  border-bottom: 1px solid #efefef;
+}
+
+.header {
+  width: 1200px;
+  margin: auto;
+  .wrapper {
+    height: 100px;
+    /*width: 1200px;*/
+    margin: auto 15px;
+  }
+  .logo, .menu{
+    float: left;
+
+  }
+  .widget {
+    float: right;
+  }
+  .logo {
+    width: 300px;
+    position: relative;
+    height: 100px;
+    a {
+      line-height: 100px;
+    }
+    img {
+      vertical-align: middle;
+    }
+  }
+  .menu {
+    margin-top: 29px;
+  }
+}
+
+/**
+* TODO move to menu.scss
+**/
+
+.menu {
+  ul li {
+    list-style-type: none;
+  }
+}
+
+.header-button {
+  background-color: white;
+  position: absolute;
+  right: 0px;
+  bottom: -4px;
+  height: 100px;
+  vertical-align: middle;
+  padding: 28px 20px;
+  font-family: "museo900";
+  font-size: 22px;
+  line-height: 23px;
+  width: 149px;
+  display: block;
+  text-align: center;
+}

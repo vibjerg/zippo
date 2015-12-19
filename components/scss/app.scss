@@ -1,0 +1,258 @@
+// Custom modules
+@import 'compass';
+@import "../config/breakpoints";
+@import "../config/colors";
+@import "../config/mixins";
+@import "../config/fonts";
+
+//@import 'background_image';
+//@import 'frontpage-slider';
+@import 'general';
+@import 'countdown';
+//@import 'footer';
+//@import 'topbar-menu';
+@import 'buttons';
+@import 'widget';
+@import 'news';
+@import 'newsletter_form';
+@import 'tabs';
+@import 'social';
+@import 'language_selector';
+@import 'table';
+@import 'tabs';
+
+p {
+  font-size: 14px;
+}
+
+.content {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+
+
+#lang_sel ul ul, #lang_sel li {
+  width: 110px;
+}
+
+
+
+/** Widget **/
+
+.main--live .widgettitle + div,
+.sidebar--live .widgettitle + div {
+  //border: 1px solid #EEE !important;
+  //padding: 2px;
+  margin-bottom: 20px;
+}
+
+
+/** preheader **/
+
+#pre-header img {
+  width: 110px;
+  margin: 5px 0;
+}
+
+#pre-header img.sponsor {
+  width: 182px;
+  padding-top: 4px;
+}
+
+
+/** Navbar **/
+li.current-menu-item a, .current-menu-parent {
+  font-weight: bold;
+
+}
+
+/** Header **/
+
+#main-header {
+  margin-bottom: 20px;
+}
+
+/** DIVERSE **/
+
+.padding-10 {
+  padding: 0 10px;
+}
+
+.loader {
+  width: 16px;
+  height: 16px;
+  display: inline-block;
+  background-image: url('http://www.copenhagenmarathon.dk/wp-content/themes/sparta-ncm-live/images/ajax-loader.gif');
+}
+
+.follow-us {
+  text-align: center;
+}
+.follow-us img {
+  max-width: 40px;
+  padding: 5px;
+}
+
+.nav-tabs {
+  max-width: 140px;
+}
+
+.nav-tabs a {
+  font-size: 12px;
+}
+
+
+.alignright {
+  float: right;
+}
+.alignleft {
+  float: left;
+}
+
+.wp-caption-text {
+  color: #AAAAAA;
+  font-size: 12px;
+  line-height: 14px;
+}
+
+.leaderboard thead tr {
+  background-color: grey;
+  color: white;
+}
+
+.favourite-btn {
+  display: inline-block;
+  font-size: 18px;
+  padding: 0 5px;
+  margin: auto;
+  text-decoration: none;
+}
+
+.favourite-add:after {
+  content: '\2606';
+}
+
+.favourite-remove:after {
+  content: '\2605';
+}
+.leaderboard .favourite-btn-wrapper {
+  text-align: center;
+  vertical-align: middle;
+}
+
+#searchform .input-append {
+  width: 100%;
+  margin-bottom: 0;
+}
+
+#searchform {
+  margin-bottom: 10px;
+}
+
+.ajax-loading {
+  width: 100%;
+  margin: 40px auto;
+}
+.ajax-loading .loader {
+  display: block;
+  margin: auto;
+}
+
+table.leaderboard th.fav-header {
+  text-align: center;
+}
+table.leaderboard th.distance-header {
+  text-align: right;
+}
+
+.social {
+  p {
+    margin: 0;
+  }
+}
+#content .ssba, #content .ssba a {
+  text-decoration: none;
+  background: none;
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif !important;
+  font-size: 14px;
+}
+
+.tab-content .ssba {
+  display: none;
+}
+.left {
+  float: left;
+}
+.right {
+  float: right;
+}
+
+.admin-bar > .wrapper {
+  margin-top: 28px;
+}
+.button-group.even-3 li {
+  margin: 0px 0px;
+}
+
+
+.widget_sparta_leaderboard {
+  .timer-block {
+    width: 31%;
+    max-width: 31%;
+    margin-bottom: 30px;
+    border: 1px solid #eee;
+    border-radius: 5px;
+    color: #555;
+    font-size: 30px;
+  }
+  .timer-value {
+    background: none;
+    line-height: 34px;
+  }
+  .timer-label {
+    //background-color: #f56e00;
+    background-color: #555;
+  }
+}
+.pre-topbar-container {
+  .participants {
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+  .timer .values {
+    display: none;
+  }
+}
+
+.trafikinfo {
+  height: 48px;
+  width: 200px;
+}
+
+.top-bar-section ul li>a {
+  font-size: 14px;
+}
+
+.row {
+  max-width: 1200px;
+}
+
+.content-container {
+  width: 1200px;
+  margin: auto;
+  overflow: hidden;
+}
+
+.tabs-content > .content {
+  padding: 0;
+}
+
+.textwidget p {
+  margin-bottom: 0px;
+}
+
+.so-panel .tabs-content {
+  margin-bottom: 0;
+}

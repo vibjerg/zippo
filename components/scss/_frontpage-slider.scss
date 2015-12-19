@@ -1,0 +1,36 @@
+$slider-reposition: 0px;
+.frontpage-slider {
+  //position: relative;
+  //top: $slider-reposition;
+  z-index: 0;
+  & + div {
+    //position: relative;
+    //top: $slider-reposition;
+    //margin-bottom: $slider-reposition;
+  }
+}
+
+.swiper-container, .swiper-slide {
+  height: 550px;
+}
+
+
+.std-header .swiper-slide {
+  position: absolute;
+  top: -1em;
+  height: 140px;
+  overflow: hidden;
+  width: 100%;
+  img {
+    position: relative;
+    top: -125px;
+  }
+}
+
+.header {
+  height: 10em;
+}
+.front.header {
+  position: absolute;
+  width: 100%;
+}

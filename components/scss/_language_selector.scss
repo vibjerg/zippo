@@ -1,0 +1,64 @@
+.landing-page .language-selector {
+  float: right;
+  position: relative;
+  top: -40px;
+  @media #{$small-only} {
+    height: 0;
+  }
+  ul {
+    list-style: none;
+  }
+  li {
+    display:inline;
+    margin:0 5px 0 5px;
+    padding:0;
+  }
+  a {
+    color: white;
+    text-transform: uppercase;
+    font-family: $headline, verdana;
+    font-size: 12px;
+  }
+  img {
+    margin-right: 5px;
+  }
+}
+
+.lang-item {
+  list-style: none;
+  img {
+    //width: 25px;
+  }
+  a {
+    color: white;
+    text-transform: uppercase;
+    font-family: $headline, verdana;
+    font-size: 12px;
+  }
+}
+
+.language-selector {
+  float: right;
+  margin-top: 1.6em;
+  margin-right: 1em;
+  margin-left: 10px;
+  ul {
+    list-style: none;
+  }
+  li {
+    display:inline;
+    margin:0 5px 0 5px;
+    padding:0;
+  }
+  a {
+    color: white;
+    text-transform: uppercase;
+    font-family: $headline, verdana;
+    font-size: 12px;
+    display: inline !important;
+    padding: 0 !important;
+  }
+  img {
+    margin-right: 5px;
+  }
+}

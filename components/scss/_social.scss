@@ -1,0 +1,39 @@
+.social {
+  p {
+    margin: 0;
+  }
+}
+
+.dcwss.dc-feed .stream li .section-intro {
+  padding: 3px 0 5px 35px !important;
+  height: 24px !important;
+}
+
+
+.dcwss.dc-feed {
+  padding: 5px
+
+}
+
+.dcwss.dc-feed.light {
+  background-color: #f3f3f3;
+}
+
+
+.dcsns-toolbar {
+  height: 30px;
+  display: none;
+}
+
+
+.dcwss.dc-feed .stream li {
+  font-family: $normal;
+}
+
+.dcwss.dc-feed.light .stream li a {
+  color: $primary-color !important;
+}
+
+.dcwss.dc-feed .stream li .section-intro a, .dcwss.dc-feed .stream li .section-intro a:hover {
+  color: white !important;
+}

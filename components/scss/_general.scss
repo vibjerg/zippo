@@ -1,0 +1,162 @@
+html {
+  //height: inherit;
+}
+
+h1 {
+  font-size: 1.8rem;
+}
+h2 {
+  font-size: 1.2rem;
+  text-transform: uppercase;
+}
+
+h3 {
+  font-size: 1rem;
+  text-transform: uppercase;
+}
+
+h4 {
+  font-size: 1rem;
+}
+h1, h2, h3, h4, h5, h6 {
+  font-family: $headline, verdana;
+  line-height: 1.2;
+}
+
+h3, h4, h6 {
+  color: $secondary-color;
+}
+
+a, a h6 {
+  color: $primary-color;
+}
+
+a p {
+  color: $secondary-color;
+}
+
+p {
+  line-height: 1.2;
+  font-family: $normal;
+}
+
+strong, b {
+  font-weight: inherit;
+  line-height: inherit;
+  font-family: $headline, verdana;
+}
+
+.forza-light {
+  font-family: $normal, verdana;
+  color: #ccc;
+  font-size: 1em;
+}
+.landing-page .forza-light {
+  color: #000000;
+}
+// wrapper for all content
+.landing-page .content {
+  padding: 3em 0 2em 0;
+  background-color: #000000;
+  overflow: hidden;
+  // sticky footer
+  min-height: 100%;
+  height: auto !important;
+  height: 100%;
+  margin: 0 auto -8em;
+
+}
+
+.run-date {
+  font-size: 25px;
+  font-family: $headline, verdana;
+  color: white;
+  @media #{$medium-up} {
+    position: relative;
+    top: -10px;
+  }
+  @media #{$small-only} {
+    margin-bottom: 0;
+  }
+
+}
+
+
+// Defines a block of content
+.block {
+  padding-top: 0.5em;
+  margin-top: 0.5em;
+  .content & {
+    @media #{$small-only} {
+      background-color: #000;
+    }
+  }
+}
+
+.inline-header {
+  display: inline;
+}
+
+.text, .text p {
+  &.white {
+    color: #fefefe;
+  }
+}
+
+.counter {
+  .element {
+
+  }
+}
+
+.footer {
+  img {
+    max-height: 50px;
+    margin-right: 50px;
+  }
+
+}
+
+// Share buttons
+div.ssba, .ssba a {
+  text-decoration: none;
+  background: none;
+  font-family: $headline;
+  font-size: 14px;
+  color: #f56e00;
+}
+
+.tab-content .ssba,
+.tabs-content .ssba,
+.accordion .ssba {
+    display: none;
+}
+
+.logo-container {
+  @media #{$small-only} {
+    margin-bottom: 50px;
+    text-align: center;
+    img {
+      width: 80%;
+    }
+  }
+}
+
+.root-container, .footer-wrapper, .header {
+  min-width: 1200px;
+  margin: auto;
+}
+
+.float-under {
+  margin-top: 1em;
+}
+
+.accordion .accordion-navigation, .accordion dd {
+  border: 1px solid #efefef;
+}
+
+.content-container {
+  .widget {
+    margin-bottom: 15px;
+  }
+}

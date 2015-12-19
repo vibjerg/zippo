@@ -1,0 +1,59 @@
+@import '../config/breakpoints';
+
+.pre-topbar-container {
+  position: absolute;
+  z-index: 1;
+  margin-top: 1em;
+  text-align: center;
+  width: $break-large;
+  .widget_sparta_tools_counter {
+    padding: 0;
+  }
+  img {
+    max-height: 40px;
+    max-width: 40px;
+    padding: 0 0.3em;
+  }
+}
+.topbar-container {
+  height: 6em;
+  position: relative;
+  .menu-wrapper {
+    margin-top: 1.4em;
+    height: 4.6em;
+    background-color: opacify($primary-color, 0.5);
+    padding: 0;
+  }
+  .menu {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+
+// Hack on foundation menu
+.top-bar-section li:not(.has-form) a:not(.button), .top-bar-section ul li {
+  background-color: transparent !important;
+  list-style: none;
+}
+
+.top-bar-section ul.dropdown li {
+  background-color: rgba($primary-color, 0.8) !important;
+}
+
+.top-bar-section ul.dropdown li a:hover,
+.top-bar-section ul.dropdown li ul li a:hover {
+  background-color: darken($primary-color, 20) !important;
+}
+
+.top-bar-section ul:not(.dropdown) {
+  margin-top: 1.6em;
+}
+
+.top-bar-section ul li > a {
+  color: white;
+  font-size: 1em;
+  font-family: $headline;
+  text-transform: uppercase;
+}
+

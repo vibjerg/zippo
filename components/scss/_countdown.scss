@@ -1,0 +1,88 @@
+/** TIMER **/
+$timer-color-dark: #222;
+$timer-color-light: #F5F5F5;
+.small .timer {
+  font-size: 20px;
+  line-height: 25px;
+  .timer-block {
+    width: 50px;
+    margin-left: 10px;
+  }
+  .timer-label {
+    font-family: $normal;
+    font-size: 11px;
+  }
+}
+
+.timer {
+  font-family: $headline;
+  color: $timer-color-dark;
+  font-size: 45px;
+  line-height: 45px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.timer-block {
+  width: 80px;
+  max-width: 22%;
+  display: inline-block;
+  //margin: 5px;
+  .value {
+    display: block;
+  }
+}
+.timer-label {
+  font-size: 13px;
+  line-height: 18px;
+  color: $timer-color-light;
+  text-align: center;
+}
+
+
+.timer-value {
+  text-align: center;
+  text-transform: uppercase;
+  border-radius: 5px;
+  padding-top: 5px;
+  @extend .timer-gradient-background;
+  &::after{
+    position: relative;
+    display: block;
+    top: -24px;
+    width: 100%;
+    border-bottom: solid 1px rgba(102, 102, 102, 0.3);
+  }
+}
+
+.timer-gradient-background {
+  // needs latest Compass, add '@import "compass"' to your scss
+  background-color: rgb(255,255,255); // Old browsers
+  @include filter-gradient(#ffffff, #dddddd, vertical); // IE6-8
+  // IE9 SVG, needs conditional override of 'filter' to 'none'
+  $experimental-support-for-svg: true;
+  @include background(linear-gradient(top,  rgba(255,255,255,1) 27%,rgba(221,221,221,1) 48%,rgba(201,201,201,1) 50%,rgba(221,221,221,1) 52%,rgba(255,255,255,1) 54%,rgba(255,255,255,1) 62%,rgba(255,255,255,1) 78%,rgba(237,237,237,1) 100%,rgba(221,221,221,1) 100%));
+}
+
+
+.small .participants {
+  .timer-block {
+    width: inherit;
+    max-width: inherit;
+  }
+  float: left;
+  position: absolute;
+  top: 0;
+  left: 15px;
+  .timer-value {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
+.widget_sparta_tools_counter {
+  position: absolute;
+  text-align: right;
+  right: 165px;
+}
