@@ -188,3 +188,16 @@ $switch-size: 13px;
     }
   }
 }
+
+.sponsor {
+  position: relative;
+  width: $break-large;
+  margin: auto;
+  z-index: 9999999;
+  img {
+    position: absolute;
+    right: 0;
+    bottom: 64px;
+    max-width: 150px;
+  }
+}
