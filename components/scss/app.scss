@@ -25,6 +25,10 @@ p {
   font-size: 14px;
 }
 
+body, .root-container, .footer-wrapper{
+  min-width: $break-large;
+}
+
 .content {
   margin-top: 30px;
   margin-bottom: 30px;

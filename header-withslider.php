@@ -16,4 +16,6 @@
   <?php zippo_header_slider(array(
       'show_tabs' => true
   )); ?>
+  <div class="sponsor hide">
+  </div>
   <div class="row">
